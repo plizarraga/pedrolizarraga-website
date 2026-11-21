@@ -1,10 +1,10 @@
-// Renders public/og.png, the 1200×630 image shown when a page is shared and as the search result thumbnail.
+// Renders public/og-v2.png, the 1200×630 image shown when a page is shared and as the search result thumbnail.
 // Run with `pnpm og-image` after changing the name, Headline, or photo.
 // og-photo.jpg is the LinkedIn profile photo cropped to head and shoulders, at twice the panel size.
 import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
 
-const output = fileURLToPath(new URL('../public/og.png', import.meta.url));
+const output = fileURLToPath(new URL('../public/og-v2.png', import.meta.url));
 const photo = fileURLToPath(new URL('og-photo.jpg', import.meta.url));
 const font = "system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif";
 

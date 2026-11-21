@@ -9,7 +9,7 @@ export const CV_PDF_PATH = '/pedro-lizarraga-cv.pdf';
 export const EXPERIENCE_MARKDOWN_PATH = '/experience.md';
 
 export const OG_IMAGE = {
-  path: '/og.png',
+  path: '/og-v2.png',
   width: 1200,
   height: 630,
   alt: 'Photo of Pedro Lizárraga beside the name and Headline: Senior Software Engineer | Full-Stack',
