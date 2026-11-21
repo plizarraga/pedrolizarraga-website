@@ -76,7 +76,7 @@ Pedro Lizárraga's personal-brand website: who he is, what he has built, and how
 | `pnpm preview` | Builds and serves `dist/` with `wrangler dev`, the local Workers runtime |
 | `pnpm run deploy` | Builds and deploys to production, then submits the sitemap URLs to IndexNow (see [Deployment](#deployment)) |
 | `pnpm indexnow` | Submits the URLs in `dist/sitemap-0.xml` to IndexNow without deploying |
-| `pnpm og-image` | Regenerates `public/og.png` after a change to the name, Headline, or photo (`scripts/og-photo.jpg`) |
+| `pnpm og-image` | Regenerates `public/og-v2.png` after a change to the name, Headline, or photo (`scripts/og-photo.jpg`) |
 | `pnpm icons` | Regenerates `public/favicon.ico` and `public/apple-touch-icon.png` from `public/favicon.svg` |
 
 `pnpm build` writes one HTML page per route plus the files for crawlers and LLMs:
@@ -89,7 +89,7 @@ dist/
 ├── experience.md, work/<slug>.md, blog/<slug>.md
 ├── llms.txt, robots.txt
 ├── sitemap-index.xml, sitemap-0.xml
-└── _headers, og.png, favicon.svg, favicon.ico, apple-touch-icon.png, pedro-lizarraga-cv.pdf, <IndexNow key>.txt
+└── _headers, og-v2.png, favicon.svg, favicon.ico, apple-touch-icon.png, pedro-lizarraga-cv.pdf, <IndexNow key>.txt
 ```
 
 ## Content rules
@@ -150,8 +150,8 @@ The **CV Master** is `master/CV_MASTER.md` in the private career repo, expected 
 
 ```text
 personal-website/
-├── public/                # Copied to dist/ as is: _headers, favicons, og.png, CV PDF
-├── scripts/               # og-image.mjs and og-photo.jpg (public/og.png), icons.mjs (favicon.ico, apple-touch-icon.png), check-deploy-branch.mjs (deploys only from main), check-cv-master.mjs (checks cv.ts against the CV Master before each deploy), check-posts.mjs (checks post sources before each build), check-dist.mjs and check-a11y.mjs (check dist/ after each build), screenshot.mjs and lib/serve-dist.mjs (serve dist/ in Chromium), indexnow.mjs (after each deploy)
+├── public/                # Copied to dist/ as is: _headers, favicons, og-v2.png, CV PDF
+├── scripts/               # og-image.mjs and og-photo.jpg (public/og-v2.png), icons.mjs (favicon.ico, apple-touch-icon.png), check-deploy-branch.mjs (deploys only from main), check-cv-master.mjs (checks cv.ts against the CV Master before each deploy), check-posts.mjs (checks post sources before each build), check-dist.mjs and check-a11y.mjs (check dist/ after each build), screenshot.mjs and lib/serve-dist.mjs (serve dist/ in Chromium), indexnow.mjs (after each deploy)
 ├── src/
 │   ├── pages/             # Routes only, plus robots.txt, llms.txt, and the .md copies
 │   ├── layouts/           # BaseLayout (meta tags, canonical URL, JSON-LD), SiteHeader, SiteFooter
