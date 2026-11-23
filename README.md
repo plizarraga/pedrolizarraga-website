@@ -195,7 +195,7 @@ Everything outside the code lives in Cloudflare and the search consoles:
 
 | Component | Platform | Notes |
 | --- | --- | --- |
-| Site | Cloudflare Workers, Worker `personal-website` | `pedrolizarraga.com` is a custom domain. Because `wrangler.jsonc` has `routes`, Wrangler turns off the `workers.dev` URL on every deploy |
+| Site | Cloudflare Workers, Worker `pedrolizarraga-website` | `pedrolizarraga.com` is a custom domain. Because `wrangler.jsonc` has `routes`, Wrangler turns off the `workers.dev` URL on every deploy |
 | Domain | Cloudflare Registrar | Renews automatically every November |
 | `www` redirect | Cloudflare Redirect Rule "Redirect www to root" | 301 to `https://pedrolizarraga.com`, keeping the path and query string |
 | HTTPS | Cloudflare "Always Use HTTPS" | 301 from `http://` to `https://`, keeping the path and query string |
