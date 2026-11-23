@@ -33,6 +33,6 @@
     "playwright": "^1.65.1",
     "sharp": "^0.35.5",
     "typescript": "^6.0.3",
-    "wrangler": "^4.165.0"
+    "wrangler": "^4.166.0"
   }
 }
