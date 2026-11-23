@@ -30,9 +30,9 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
     "@axe-core/playwright": "^4.14.0",
-    "playwright": "^1.65.0",
+    "playwright": "^1.65.1",
     "sharp": "^0.35.5",
     "typescript": "^6.0.3",
-    "wrangler": "^4.159.0"
+    "wrangler": "^4.165.0"
   }
 }
