@@ -218,3 +218,4 @@ This is a personal site maintained by its owner. Changes go through a pull reque
 - Branch names follow `type/description`, such as `feat/new-case-study`.
 - Commits follow [Conventional Commits](https://www.conventionalcommits.org).
 - Run `pnpm build` before opening a PR; it runs `astro check` and `check:posts` first and `check:dist` and `check:a11y` last. CI runs the same command.
+- A GitHub ruleset on `main`, "Require CI on main", blocks merges and pushes until the CI `build` check passes. Wait for it to report before merging.
