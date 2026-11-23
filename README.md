@@ -38,8 +38,8 @@ Pedro Lizárraga's personal-brand website: who he is, what he has built, and how
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/plizarraga/personal-website.git
-   cd personal-website
+   git clone https://github.com/plizarraga/pedrolizarraga-website.git
+   cd pedrolizarraga-website
    ```
 
 2. Install dependencies:
@@ -149,7 +149,7 @@ The **CV Master** is `master/CV_MASTER.md` in the private career repo, expected 
 ## Repository structure
 
 ```text
-personal-website/
+pedrolizarraga-website/
 ├── public/                # Copied to dist/ as is: _headers, favicons, og-v2.png, CV PDF
 ├── scripts/               # og-image.mjs and og-photo.jpg (public/og-v2.png), icons.mjs (favicon.ico, apple-touch-icon.png), check-deploy-branch.mjs (deploys only from main), check-cv-master.mjs (checks cv.ts against the CV Master before each deploy), check-posts.mjs (checks post sources before each build), check-dist.mjs and check-a11y.mjs (check dist/ after each build), screenshot.mjs and lib/serve-dist.mjs (serve dist/ in Chromium), indexnow.mjs (after each deploy)
 ├── src/

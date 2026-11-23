@@ -27,7 +27,7 @@ Cloudflare and search-console settings live outside the repo. Read the live zone
 
 ### Issue tracker
 
-Issues are tracked in GitHub Issues for `plizarraga/personal-website`, managed with `gh`. See `docs/agents/issue-tracker.md`.
+Issues are tracked in GitHub Issues for `plizarraga/pedrolizarraga-website`, managed with `gh`. See `docs/agents/issue-tracker.md`.
 
 ### Triage labels
 
