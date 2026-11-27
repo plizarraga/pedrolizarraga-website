@@ -6,7 +6,7 @@ role: Freelance Software Engineer
 organization: Independent
 start: '2026-10'
 end: null
-status: in development
+status: staging
 note: I do not name the clinic.
 stack:
   - TypeScript
