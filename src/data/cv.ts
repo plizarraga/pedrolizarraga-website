@@ -122,17 +122,18 @@ export const roles: Role[] = [
     projects: [
       {
         name: 'AI Appointment Agent for a Dental Clinic',
-        status: 'in development',
+        status: 'staging',
         start: '2026-10',
         end: null,
         caseStudySlug: 'ai-appointment-agent',
         bullets: [
-          'Developing an AI agent that answers patient questions and books, reschedules, and cancels appointments for a dental clinic over WhatsApp, with a panel where the clinic team takes over conversations the agent cannot resolve.',
+          'Built an AI agent that answers patient questions and books, reschedules, and cancels appointments for a dental clinic over WhatsApp, with a panel where the clinic team takes over conversations the agent cannot resolve; it runs in a staging environment, ready for testing with a demo account.',
           'Implemented tool calling and structured output with the Vercel AI SDK and configurable model providers (OpenAI, Anthropic, Google, OpenRouter) through a closed tool catalog; code enforces identity, policies, and output guards (invented prices, wrong dates), validated by an automated evals suite.',
+          'Built the WhatsApp Cloud API webhook with signature verification and message deduplication, one Durable Object per conversation to keep messages in order, and two-way Google Calendar sync through a service account, where a failed sync leaves the booking pending for retry; a scheduled job sends appointment notices.',
           'Built the backend on Cloudflare Workers, Durable Objects, D1, Drizzle, and Hono, and the team panel with React, with Vitest tests and a GitHub Actions CI pipeline.',
           'Designed the solution as a reusable template, one deployment per client, to adapt it to other business niches.',
         ],
-        environment: ['TypeScript', 'Vercel AI SDK', 'OpenAI APIs', 'Cloudflare Workers', 'Durable Objects', 'D1', 'Drizzle', 'Hono', 'WhatsApp Cloud API', 'Better Auth', 'React', 'Vitest', 'GitHub Actions'],
+        environment: ['TypeScript', 'Vercel AI SDK', 'OpenAI APIs', 'Cloudflare Workers', 'Durable Objects', 'D1', 'Drizzle', 'Hono', 'WhatsApp Cloud API', 'Google Calendar API', 'Better Auth', 'React', 'Vitest', 'GitHub Actions'],
       },
     ],
   },
